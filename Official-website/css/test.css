@@ -123,7 +123,7 @@ nav.navbar {
         height: 400px;
     }
     .carousel-indicators{
-        left:80%;
+        bottom: 75px;
     }
     .carousel-indicators .active,
     .carousel-indicators li{
