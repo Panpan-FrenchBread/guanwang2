@@ -10,7 +10,6 @@ body {
     background-color: #001D32;
 }
 
-
 .nav > li > a {
     padding: 15px 32px;
 }
@@ -27,87 +26,103 @@ body {
     margin-bottom: 0;
 }
 
+/*华商背景图*/
 nav.navbar {
     background-image: url("../image/header-img.jpg");
     background-size: 100% 100%;
 }
 
-.navbar-inverse .navbar-nav > .active > a,
-.navbar-inverse .navbar-nav > .active > a:focus,
-.navbar-inverse .navbar-nav > .active > a:hover {
-    background-color: #03142e;
-}
-
+/*手机端和电脑端点击菜单时颜色*/
 .navbar-inverse .navbar-nav > .open > a,
 .navbar-inverse .navbar-nav > .open > a:focus,
 .navbar-inverse .navbar-nav > .open > a:hover {
     background-color: rgba(3, 49, 71, 0.76);
 }
 
-.navbar-nav .open .dropdown-menu {
-    background-color: rgba(29, 113, 136, 0.99);
+/*手机和电脑的首页选中的背景颜色*/
+.navbar-inverse .navbar-nav > .active > a,
+.navbar-inverse .navbar-nav > .active > a:focus,
+.navbar-inverse .navbar-nav > .active > a:hover {
+    background-color: #03142e;
 }
 
+/*手机端和电脑端菜单未点击时的字体颜色*/
 .navbar-inverse .navbar-nav > li > a {
     color: white;
 }
 
-.navbar-inverse .navbar-nav .open .dropdown-menu > li > a {
-    color: white;
-}
-.dropdown-menu .divider {
-    margin: 10px 0;
-}
+@media (min-width: 300px)and  (max-width: 992px) {
 
+    /*手机端点击菜单时下落菜单的颜色*/
+    .navbar-nav .open .dropdown-menu {
+        background-color: rgba(29, 113, 136, 0.99);
+    }
 
-@media (min-width: 300px)and  (max-width: 992px){
+    /*手机端点击菜单时下落菜单的字体颜色*/
+    .navbar-inverse .navbar-nav .open .dropdown-menu > li > a {
+        color: white;
+    }
+
     /*手机端轮播图高度*/
     .item {
         cursor: pointer;
-        height:210px;
+        height: 210px;
     }
 
     /*手机端校园风景图高度*/
-    .landscape{
+    .landscape {
         height: 200px;
     }
+
     /*手机端无点击事件*/
-    .big-pic{
-        display: none!important;
+    .big-pic {
+        display: none !important;
     }
 }
+
 @media (min-width: 992px) {
     /*header部分的样式*/
-
     /*电脑端取消掉bootstrap默认点击事件*/
-    .open .dropdown-menu{
-        display: none!important;
+    .open .dropdown-menu {
+        display: none !important;
     }
 
+    /*取消掉bootstrap默认样式*/
     .navbar {
         border-radius: 0;
         border: none;
     }
 
+    /*电脑端下落菜单显示*/
     .dropdown:hover .dropdown-menu {
         display: block;
     }
+
     /*下拉菜单*/
     .dropdown:hover {
         background-color: #fff;
     }
 
+    /**/
     .nav.navbar-nav li:hover a {
         color: #001D32;
     }
-    /*下落菜单*/
+
+    /*电脑端下落菜单的外间距*/
+    .dropdown-menu .divider {
+        margin: 10px 0;
+    }
+
+    /*电脑端下落菜单的内间距*/
     .dropdown-menu > li > a {
         padding: 8px 42px;
     }
+
     /*电脑端搜索框*/
     .search-nav {
         padding-top: 58px;
     }
+
     /*header部分的样式结束*/
     /*------轮播图部分的样式----------*/
     /*电脑端轮播图图片铺设的高度*/
@@ -115,20 +130,24 @@ nav.navbar {
         cursor: pointer;
         height: 400px;
     }
-    .carousel-indicators{
+
+    .carousel-indicators {
         bottom: 75px;
     }
+
     /*设置轮播图按钮间的间距*/
     .carousel-indicators .active,
-    .carousel-indicators li{
-        margin:0 5px;
+    .carousel-indicators li {
+        margin: 0 5px;
     }
+
     /*设置轮播图按钮大小*/
     .carousel-indicators li,
-    .carousel-indicators .active{
+    .carousel-indicators .active {
         width: 13px;
         height: 13px;
     }
+
     /*轮播图的透明描述文字*/
     .carousel-caption {
         right: 0;
@@ -136,6 +155,7 @@ nav.navbar {
         padding-bottom: 30px;
         background-color: rgba(8, 8, 9, 0.8);
     }
+
     /*覆盖bootstrap轮播图按钮默认位置样式*/
     .carousel-caption {
         right: 0;
@@ -143,21 +163,21 @@ nav.navbar {
         left: 0;
         padding-top: 23px;
         padding-bottom: 57px;
-
     }
-    /*------轮播图部分的样式结束----------*/
 
+    /*------轮播图部分的样式结束----------*/
     /*电脑端校园风景图高度*/
-    .landscape{
+    .landscape {
         height: 140px;
         cursor: pointer;
     }
+
     /*.landscape:hover {*/
-        /*width: 600px;*/
-        /*height: 280px;*/
+    /*width: 600px;*/
+    /*height: 280px;*/
     /*}*/
     /*风景大图显示*/
-    .big-pic{
+    .big-pic {
         position: absolute;
         top: -90px;
         right: 278px;
@@ -167,15 +187,14 @@ nav.navbar {
         display: none;
         z-index: 100;
     }
-    .big-pic img{
+
+    .big-pic img {
         border-radius: 15px;
     }
 
 }
 
-
-
-/*以前写的样式，未改动*/
+/*以前写的样式,稍微删改*/
 
 * {
     margin: 0;
@@ -194,40 +213,27 @@ ul {
     float: left;
 }
 
-.bottom-body,
 .top-body {
     background-color: #001D32;
-    /*background-color: green;*/
 }
 
 .middle-body {
     background-color: #F9F9F9;
 }
 
-/*上中下区域region设置宽水平居中*/
-.region-top,
-.region-middle,
-.region-bottom {
-    margin: 0 auto;
-}
-
-.region-top-left,
-.region-top-middle,
-.region-top-right,
-.region-middle-left,
-.region-middle-middle,
-.region-middle-right,
-.region-bottom-left,
-.region-bottom-middle,
-.region-bottom-right {
+.region-middle-left-top,
+.region-middle-right-top,
+.region-middle-left-bottom,
+.region-middle-right-bottom {
     position: relative;
 }
 
-h5 {
+.carousel-caption h5 {
+    margin: 0;
     color: white;
 }
 
-h5:hover {
+.carousel-caption h5:hover {
     text-decoration: underline; /*下划线*/
 }
 
@@ -305,14 +311,14 @@ h5:hover {
     color: white;
 }
 
-.footer-body {
-    /*width: 1200px;*/
-    /*margin: 0 auto;*/
-}
+/*.footer-body {*/
+/*!*width: 1200px;*!*/
+/*!*margin: 0 auto;*!*/
+/*}*/
 
-.footer-box {
-    /*width: 400px;*/
-}
+/*.footer-box {*/
+/*!*width: 400px;*!*/
+/*}*/
 
 .footer-body p {
     font-size: 14px;
