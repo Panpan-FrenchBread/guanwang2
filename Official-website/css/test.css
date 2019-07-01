@@ -55,6 +55,9 @@ nav.navbar {
 .navbar-inverse .navbar-nav .open .dropdown-menu > li > a {
     color: white;
 }
+.dropdown-menu .divider {
+    margin: 10px 0;
+}
 
 
 @media (min-width: 300px)and  (max-width: 992px){
@@ -71,6 +74,12 @@ nav.navbar {
 }
 @media (min-width: 992px) {
     /*header部分的样式*/
+
+    /*电脑端取消掉bootstrap默认点击事件*/
+    .open .dropdown-menu{
+        display: none!important;
+    }
+
     .navbar {
         border-radius: 0;
         border: none;
