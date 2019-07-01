@@ -66,7 +66,7 @@ nav.navbar {
 
     /*手机端校园风景图高度*/
     .landscape{
-        height: 215px;
+        height: 200px;
     }
 }
 @media (min-width: 992px) {
