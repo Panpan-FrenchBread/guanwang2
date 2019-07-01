@@ -13,7 +13,20 @@
 
     <script src="js/jquery-3.2.1.min.js"></script>
     <script src="js/bootstrap.min.js"></script>
-
+    <script type="text/javascript">
+        function MM_changeProp(objId, x, theProp, theValue) { //v9.0
+            var obj = null;
+            with (document) {
+                if (getElementById)
+                    obj = getElementById(objId);
+            }
+            if (obj) {
+                if (theValue == true || theValue == false)
+                    eval("obj.style." + theProp + "=" + theValue);
+                else eval("obj.style." + theProp + "='" + theValue + "'");
+            }
+        }
+    </script>
 </head>
 <body>
 
@@ -674,24 +687,43 @@
                                 <div class="col-md-12">
                                     <div class="block-title ">
                                         <h2 class="text-distance">校园风景</h2>
-                                        <div style="margin-bottom: 14px;"><img
-                                                src="image/slide1.jpg" alt="" class="img-responsive landscape"
-                                        ></div>
+
+                                        <div id="small-pic1" style="margin-bottom: 14px;"
+                                             onClick="MM_changeProp('big-pic1','','display','block','DIV')"
+                                             onMouseOut="MM_changeProp('big-pic1','','display','none','DIV')">
+                                            <img src="image/slide1.jpg" alt="" class="img-responsive landscape"
+                                                 style="border-radius: 5px;">
+                                        </div>
+                                        <div class="big-pic" id="big-pic1" style="">
+                                            <img src="image/slide1.jpg" alt="" style="width: 100%;height: 100%;">
+                                        </div>
                                     </div>
                                 </div>
                             </div>
                             <div class="row">
                                 <div class="col-md-12">
-                                    <div style="margin-bottom: 14px;"><img
-                                            src="image/slide2.jpg" alt="" class="img-responsive landscape "
-                                    ></div>
+                                    <div id="small-pic2" style="margin-bottom: 14px;"
+                                         onClick="MM_changeProp('big-pic2','','display','block','DIV')"
+                                         onMouseOut="MM_changeProp('big-pic2','','display','none','DIV')">
+                                        <img src="image/slide2.jpg" alt="" class="img-responsive landscape "
+                                             style="border-radius: 5px;"
+                                        ></div>
+                                    <div class="big-pic" id="big-pic2" style="">
+                                        <img src="image/slide2.jpg" alt="" style="width: 100%;height: 100%;">
+                                    </div>
                                 </div>
                             </div>
                             <div class="row">
                                 <div class="col-md-12">
-                                    <div style="margin-bottom: 14px;"><img
-                                            src="image/slide3.jpg" alt="" class="img-responsive landscape"
-                                    ></div>
+                                    <div id="small-pic3" style="margin-bottom: 14px;"
+                                         onClick="MM_changeProp('big-pic3','','display','block','DIV')"
+                                         onMouseOut="MM_changeProp('big-pic3','','display','none','DIV')">
+                                        <img src="image/slide3.jpg" alt="" class="img-responsive landscape"
+                                             style="border-radius: 5px;"
+                                        ></div>
+                                    <div class="big-pic" id="big-pic3" style="">
+                                        <img src="image/slide3.jpg" alt="" style="width: 100%;height: 100%;">
+                                    </div>
                                 </div>
                             </div>
                         </div>
