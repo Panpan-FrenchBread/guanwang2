@@ -146,7 +146,27 @@ nav.navbar {
     /*电脑端校园风景图高度*/
     .landscape{
         height: 140px;
+        cursor: pointer;
     }
+    /*.landscape:hover {*/
+        /*width: 600px;*/
+        /*height: 280px;*/
+    /*}*/
+    /*风景大图显示*/
+    .big-pic{
+        position: absolute;
+        top: -90px;
+        right: 278px;
+        background-color: #ddd;
+        width: 800px;
+        height: 300px;
+        display: none;
+        z-index: 100;
+    }
+    .big-pic img{
+        border-radius: 15px;
+    }
+
 }
 
 
