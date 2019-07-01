@@ -71,6 +71,10 @@ nav.navbar {
     .landscape{
         height: 200px;
     }
+    /*手机端无点击事件*/
+    .big-pic{
+        display: none!important;
+    }
 }
 @media (min-width: 992px) {
     /*header部分的样式*/
