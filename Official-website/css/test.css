@@ -8,30 +8,8 @@ a {
 
 body {
     background-color: #001D32;
-
-    overflow-x: hidden;
 }
 
-/*.search-btn {*/
-/*float: left;*/
-/*border: 1px solid #9d9d9d;*/
-/*width: 60px;*/
-/*height: 35px;*/
-/*background-color: #9d9d9d;*/
-/*text-align: center;*/
-/*line-height: 35px;*/
-/*margin-top: 15px;*/
-/*color: white;*/
-/*}*/
-
-/*.search-input {*/
-/*float: left;*/
-/*border: 2px solid white;*/
-/*width: 150px;*/
-/*height: 35px;*/
-/*padding-left: 5px;*/
-/*margin-top: 15px;*/
-/*}*/
 
 .nav > li > a {
     padding: 15px 32px;
@@ -41,9 +19,6 @@ body {
     padding: 20px;
 }
 
-/*.nav .navbar-nav:hover a{*/
-/*color: #555555;*/
-/*}*/
 .col-md-4 {
     padding-left: 0;
 }
@@ -81,18 +56,21 @@ nav.navbar {
     color: white;
 }
 
-/*.col-lg-4 .search-input,*/
-/*.search-btn{*/
-/*margin-top: 40px;*/
-/*margin-bottom: -40px;*/
-/*}*/
-@media (max-width: 992px) {
+
+@media (min-width: 300px)and  (max-width: 992px){
+    /*手机端轮播图高度*/
     .item {
         cursor: pointer;
         height:250px;
     }
+
+    /*手机端校园风景图高度*/
+    .landscape{
+        height: 250px;
+    }
 }
 @media (min-width: 992px) {
+    /*header部分的样式*/
     .navbar {
         border-radius: 0;
         border: none;
@@ -101,7 +79,7 @@ nav.navbar {
     .dropdown:hover .dropdown-menu {
         display: block;
     }
-
+    /*下拉菜单*/
     .dropdown:hover {
         background-color: #fff;
     }
@@ -109,15 +87,17 @@ nav.navbar {
     .nav.navbar-nav li:hover a {
         color: #001D32;
     }
-
+    /*下落菜单*/
     .dropdown-menu > li > a {
         padding: 8px 42px;
     }
-
+    /*电脑端搜索框*/
     .search-nav {
         padding-top: 58px;
     }
-
+    /*header部分的样式结束*/
+    /*------轮播图部分的样式----------*/
+    /*电脑端轮播图图片铺设的高度*/
     .item {
         cursor: pointer;
         height: 400px;
@@ -125,39 +105,44 @@ nav.navbar {
     .carousel-indicators{
         bottom: 75px;
     }
+    /*设置轮播图按钮间的间距*/
     .carousel-indicators .active,
     .carousel-indicators li{
         margin:0 5px;
     }
+    /*设置轮播图按钮大小*/
     .carousel-indicators li,
     .carousel-indicators .active{
         width: 13px;
         height: 13px;
     }
+    /*轮播图的透明描述文字*/
     .carousel-caption {
         right: 0;
         left: 0;
         padding-bottom: 30px;
         background-color: rgba(8, 8, 9, 0.8);
     }
-
+    /*覆盖bootstrap轮播图按钮默认位置样式*/
     .carousel-caption {
-        position: absolute;
         right: 0;
         bottom: -31px;
         left: 0;
-        z-index: 10;
         padding-top: 23px;
         padding-bottom: 57px;
-        color: #fff;
-        text-align: center;
-        text-shadow: 0 1px 2px rgba(0, 0, 0, .6);
+
     }
+    /*------轮播图部分的样式结束----------*/
 
-
-
-
+    /*电脑端校园风景图高度*/
+    .landscape{
+        height: 140px;
+    }
 }
+
+
+
+/*以前写的样式，未改动*/
 
 * {
     margin: 0;
@@ -250,6 +235,7 @@ h5:hover {
 .text-distance {
     padding-right: 7px;
     margin-bottom: 7px;
+
 }
 
 /*more按钮*/
@@ -287,12 +273,12 @@ h5:hover {
 }
 
 .footer-body {
-    width: 1200px;
-    margin: 0 auto;
+    /*width: 1200px;*/
+    /*margin: 0 auto;*/
 }
 
 .footer-box {
-    width: 400px;
+    /*width: 400px;*/
 }
 
 .footer-body p {
