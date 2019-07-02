@@ -68,23 +68,27 @@ nav.navbar {
         cursor: pointer;
         height: 210px;
     }
-    .ico{
+
+    .ico {
         width: 80px;
         height: 80px;
         cursor: pointer;
         margin-right: 5px;
     }
-    .ico img{
+
+    .ico img {
         width: 80px;
         height: 80px;
         border-radius: 15px;
         /*background-color: #0095DE;*/
     }
-    .ico img:nth-child(2){
-       display: none;
+
+    .ico img:nth-child(2) {
+        display: none;
     }
-    .ico-desc{
-        margin:0 13px 0 10px;
+
+    .ico-desc {
+        margin: 0 13px 0 10px;
     }
 
     /*手机端校园风景图高度*/
@@ -120,18 +124,25 @@ nav.navbar {
     .dropdown:hover {
         background-color: #fff;
     }
-    .dropdown-menu {
-        top: 99%;
-        left: -1px;
-    }
+
     /**/
     .nav.navbar-nav li:hover a {
         color: #001D32;
     }
 
+    /*最后一个下落菜单向左移动*/
+    .nav.navbar-nav li:last-child .dropdown-menu {
+        left: -43px;
+    }
+
     /*电脑端下落菜单的外间距*/
     .dropdown-menu .divider {
         margin: 10px 0;
+    }
+
+    .dropdown-menu {
+        top: 99%;
+        left: -1px;
     }
 
     /*电脑端下落菜单的内间距*/
@@ -188,7 +199,7 @@ nav.navbar {
 
     /*------轮播图部分的样式结束----------*/
     /*ico图标翻转效果*/
-    .ico img{
+    .ico img {
         width: 80px;
         height: 80px;
         border-radius: 15px;
@@ -196,33 +207,38 @@ nav.navbar {
         position: absolute;
         top: 0;
         left: 0;
-        transition: all,1s;
+        transition: all, 1s;
     }
-    .ico img:nth-child(2){
+
+    .ico img:nth-child(2) {
         width: 78px;
         height: 78px;
         top: 1px;
         left: 1px;
     }
-    .ico{
+
+    .ico {
         width: 80px;
         height: 80px;
         position: relative;
         perspective: 1000px;
         margin-right: 5px;
     }
-    .ico img:first-child{
+
+    .ico img:first-child {
         z-index: 1;
         backface-visibility: hidden;
         /*不是还正面对向屏幕就隐藏*/
     }
-    .ico:hover img{
+
+    .ico:hover img {
         transform: rotateY(-180deg);
     }
 
-    .ico-container{
+    .ico-container {
         display: none;
     }
+
     /*电脑端校园风景图高度*/
     .landscape {
         height: 140px;
