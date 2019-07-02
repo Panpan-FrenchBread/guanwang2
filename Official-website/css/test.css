@@ -120,7 +120,10 @@ nav.navbar {
     .dropdown:hover {
         background-color: #fff;
     }
-
+    .dropdown-menu {
+        top: 99%;
+        left: -1px;
+    }
     /**/
     .nav.navbar-nav li:hover a {
         color: #001D32;
